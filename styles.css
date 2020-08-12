@@ -1,0 +1,155 @@
+/* Master Styles  File */
+/* Author: Gerrit Mulder */
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.navbar_leftside {
+    display: flex;
+}
+
+.navbar > .navbar_leftside > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+}
+
+.navbar_link {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navbar_link:hover {
+    border-bottom: solid black;
+}
+
+.navbar_link a:hover {
+    color: black;
+}
+
+/* The home link. */
+.navbar_link a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* Maybe remove this? */
+.navbar > .navbar_rightside > div{
+    /*text-transform: uppercase;*/
+    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+}
+
+/* The header and photo of Gerrit */
+.header {
+    /* display: flex; */
+    padding: 20px;
+    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 5em;
+}
+
+.portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    
+}
+
+/* Portfolio Styles */
+.portfolio_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio_item {
+    position: relative;
+}
+
+.portfolio_item_image {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image_text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.image_text .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+    font-family: 'Perpetua', 'Times New Roman', Times, serif;
+}
+
+.image_text:hover .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: lightseagreen;
+    font-family: 'Perpetua', 'Times New Roman', Times, serif;
+}
+
+/* The styles for showing the date each item in the portfolio was completed. */
+.image_text P { 
+    transition: 1s;
+    border: solid black;
+    border-radius: 1em;
+    box-shadow: 0 0 3pt 2pt white;
+    background-color: white;
+}
+
+.image_text:hover P {
+    transition: 1s;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: 0 0 3pt 2pt transparent;
+}
+
+.image_text .date_completed {
+    font-weight: 600;
+    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+}
+
+.image_text:hover .date_completed {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+}
+
+/* The style for fading the images. */
+.image_fade {
+    transition: 1s;
+    filter: brightness(10%);
+}

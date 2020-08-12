@@ -26,10 +26,189 @@
     <body>
         <div class="container">
             <div class="navbar">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <div>Gerrit Mulder</div>
+                <div class="navbar_leftside">
+                    <div class="navbar_link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="navbar_link">
+                        <a href="about.html">About Me</a>
+                    </div>
+                </div>
+                <div class="navbar_rightside">
+                    <div class="brand">
+                        <div>Gerrit Mulder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">Gerrit Mulder</div>
+        <img class="portrait" src="images/GerritMulderPortrait.jpg" alt="Gerrit Mulder">
+
+        <!-- This is where the main bulk of the content for my portfolio is. -->
+        <div class="main_content">
+            <div class="portfolio_items">
+
+                <!-- General portfolio item for when I add future projects to my portfolio. -->
+                <!-- <div class="portfolio_item">
+                    <div class="portfolio_item_image" style="background-image:url(images/portfolio.jpg)"></div>
+
+                    <div class="image_text">
+                        <div class="logo">
+                            <img src="images/logos/temp.png">
+                        </div>
+                        <div class="subtitle">
+                            This is where a short explanation would be.
+                        </div>
+                        <div class="date_completed">
+                            <p>April 2020</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- This is a single item in my portfolio. -->
+                <div class="portfolio_item">
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci4490.jpg)"></div>
+
+                    <div class="image_text">
+                        <div class="logo">
+                            <img src="images/logos/temp.png">
+                        </div>
+                        <div class="subtitle">
+                            This is where a short explanation would be.
+                        </div>
+                        <div class="date_completed">
+                            <p>April 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item">
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci4483.jpg)"></div>
+
+                    <div class="image_text">
+                        <div class="logo">
+                            <img src="images/logos/temp.png">
+                        </div>
+                        <div class="subtitle">
+                            This is where a short explanation would be.
+                        </div>
+                        <div class="date_completed">
+                            <p>April 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item">
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci4481.jpg)"></div>
+
+                    <div class="image_text">
+                        <div class="logo">
+                            <img src="images/logos/temp.png">
+                        </div>
+                        <div class="subtitle">
+                            This is where a short explanation would be.
+                        </div>
+                        <div class="date_completed">
+                            <p>March 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item">
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci3319.jpg)"></div>
+
+                    <div class="image_text">
+                        <div class="logo">
+                            <img src="images/logos/temp.png">
+                        </div>
+                        <div class="subtitle">
+                            This is where a short explanation would be.
+                        </div>
+                        <div class="date_completed">
+                            <p>December 2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item">
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci3357.jpg)"></div>
+
+                    <div class="image_text">
+                        <div class="logo">
+                            <img src="images/logos/temp.png">
+                        </div>
+                        <div class="subtitle">
+                            This is where a short explanation would be.
+                        </div>
+                        <div class="date_completed">
+                            <p>October 2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item">
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci2210.jpg)"></div>
+
+                    <div class="image_text">
+                        <div class="logo">
+                            <img src="images/logos/maze.png">
+                        </div>
+                        <div class="subtitle">
+                            This is where a short explanation would be.
+                        </div>
+                        <div class="date_completed">
+                            <p>December 2017</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item">
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci1027.jpg)"></div>
+
+                    <div class="image_text">
+                        <div class="logo">
+                            <img src="images/logos/java.png">
+                        </div>
+                        <div class="subtitle">
+                            This is where a short explanation would be.
+                        </div>
+                        <div class="date_completed">
+                            <p>Spring 2016</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item">
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci1026.jpg)"></div>
+
+                    <div class="image_text">
+                        <div class="logo">
+                            <img src="images/logos/python.png">
+                        </div>
+                        <div class="subtitle">
+                            This is where a short explanation would be.
+                        </div>
+                        <div class="date_completed">
+                            <p>Fall 2015</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
+
+    <!-- Javascript for adding the fade effect for the images. -->
+    <script>
+        const portfolio_items = document.querySelectorAll('.portfolio_item')
+        portfolio_items.forEach(portfolio_item => {
+            portfolio_item.addEventListener('mouseover', () => {
+                portfolio_item.childNodes[1].classList.add('image_fade');
+            })
+
+            portfolio_item.addEventListener('mouseout', () => {
+                portfolio_item.childNodes[1].classList.remove('image_fade');
+            })
+        })
+    </script>
 </html>
