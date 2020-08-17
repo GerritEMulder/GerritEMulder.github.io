@@ -80,7 +80,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 600px;
-    
 }
 
 /* Portfolio Styles */
@@ -294,4 +293,19 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 2.5em;
+}
+
+/* Styles for about me. */
+.about_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about_me {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2em;
+    margin-right: auto;
+    
 }
