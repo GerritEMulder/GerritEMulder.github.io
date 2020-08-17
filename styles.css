@@ -285,8 +285,13 @@ body {
 /* Thank you page styles. */
 .T_header {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 5em;
 }
 
 .TP {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
 }
