@@ -1,0 +1,48 @@
+<!-- Author: Gerrit E. Mulder -->
+<!-- Computer Science 4481 project. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Image Compression</title> 
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar_leftside">
+                    <div class="navbar_link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="navbar_link">
+                        <a href="contact.html">Contact Me</a>
+                    </div>
+                </div>
+                <div class="navbar_rightside">
+                    <div class="brand">
+                        <div>Gerrit Mulder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">DPCM Image Compression and Decompression</div>
+        <div class="description">
+            <img src="images/compsci4481.png">
+            <p> This is a program I built in C for an image compression class at Western University. <br><br>
+                <!-- Maybe remove this line ^ -->
+                This project is a collection of programs I built for image compression and decompression.<br>
+                The compression program takes the provided pgm (portable gray map) image and compresses it using lossless DPCM encoding and then writes it to a file.<br>
+                The decompression program uses the encoded file created by the compression program and decompresses it into an exact copy of the original image that was compressed.<br>
+                The compare pgm images program is used to check if both images are identical.  
+                This used to confirm that lossless compression has been achieved.<br><br>
+
+            </p>
+        </div>
+        <div class="project_code">
+            <a href="https://github.com/GerritEMulder/DPCM_Image_Compression">Project Code</a>
+        </div>
+    </body>
+</html>

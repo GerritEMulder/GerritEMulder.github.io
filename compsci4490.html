@@ -1,0 +1,68 @@
+<!-- Author: Gerrit E. Mulder -->
+<!-- Computer Science 4490 thesis project. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Undergraduate Thesis Project</title> 
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar_leftside">
+                    <div class="navbar_link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="navbar_link">
+                        <a href="contact.html">Contact Me</a>
+                    </div>
+                </div>
+                <div class="navbar_rightside">
+                    <div class="brand">
+                        <div>Gerrit Mulder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">Undergraduate Thesis Project</div>
+        <div class="description">
+            <img src="images/compsci4490.png">
+            <p> This is the Undergraduate Thesis project I completed in my final year of University.<br><br>
+                <!-- Maybe remove this line ^ -->
+                This thesis is a feasibility study examining the automated segmentation of scanned 3D images for extraction of non-planar pages.  
+                Positive study findings indicate that this is indeed possible, however, more work is required to advance this area of study.  
+                Most previous researchers have used replicas of historical books/texts in their studies, while this project focuses on using a real historical manuscript to determine findings.<br><br>
+
+                To study the feasibility of using a micro-CT scanner with a deep learning algorithm to splice images into individual legible pages from a closed book, scans were first obtained of the book Book of hours: Canon Grandel's Prayer Book.  
+                The scans were taken using a Nikon XT 225 ST industrial micro-CT scanner.  To maximize image resolution the book was scanned in two sections.  
+                The larger of these two sections was the dataset used for the entire feasibility study.<br><br>
+
+                The scans were then loaded into the software Dragonfly 4.1 by Object Research Systems (ORS).<br>
+                A subset of the slices was separated from the book scan and then segmented manually.  
+                To do the segmentation each slice in the subset was examined and six pages were highlighted.  
+                Each page was highlighted a different colour.  This took about 45 minutes per slice.  
+                The subset contained one slice for every 100 slices in the original scan of the book for a total of 17 slices in my subset. <br><br>
+
+                Different deep learning algorithm were tested, U-Net, PsyNet, and FC-DenseNet. 
+                PsyNet and FC-DenseNet took over four times to train and PsyNet crashed Dragonfly when used to segment.
+                Ultimately U-Net was selected as it trained the fastest and was able to produce accurate segmentation.
+                Using the subset of slices, segmented manually, the U-Net deep learning algorithm was trained. <br><br>
+
+                Once the deep learning algorithm had its neural network built, the algorithm was used to segment the entire scanned volume of slices, over 1,700 slices.
+                The results from this partial book were evaluated to determine the feasibility of automated or semi-automated procedures to segment a scanned book to extract multiple pages at once.<br><br>
+
+                The image used on this page is of one of pages I managed to extract.
+                One can clearly see some letters on the page.<br><br>
+                
+                For additional information and images please see the entire thesis report which I have linked below.
+            </p>
+        </div>
+        <div class="project_code">
+            <a href="https://drive.google.com/file/d/1sgBPC58fRjT8Zs3jv1CzLU3iafAF7f8K">Thesis Report</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!-- Author: Gerrit E. Mulder -->
+<!-- Computer Science 1027 project. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pretty Print Tree</title> 
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar_leftside">
+                    <div class="navbar_link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="navbar_link">
+                        <a href="contact.html">Contact Me</a>
+                    </div>
+                </div>
+                <div class="navbar_rightside">
+                    <div class="brand">
+                        <div>Gerrit Mulder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">Java Pretty Print Tree Project</div>
+        
+        <div class="description">
+            <img src="images/compsci1027.jpg">
+            <p> This is a program I wrote in Java for one of my first computer science classes at Western university. <br><br>
+                <!-- Maybe remove this line ^ -->
+                The purpose of this assignment was to get experience working with several topics, including recursion, binary trees and various binary tree algorithms. <br>
+
+                I created only the code found in PooPoo.java, all other code was supplied to me.<br>
+
+                PrettyPrintTree.java pretty prints a tree whose root is "root" on your terminal. 
+                That is, use PrettyPrintTree.printNode(root) in PooPoo.java to pretty print the tree. One example of that is shown in the image on this page. 
+                This pretty printing code is "known" to be correct but be wary of one thing: the length of the printed links (made up of "/" or "\") between nodes in adjacent levels in the tree is related to 2^{height-levelNum}. 
+                Thus for a tree of height 8 (8 levels) the length of the left and right links between the root and its left and right children (levelNum==1) has to be 2^7=128 to ensure pretty printing. This is completely unrealistic and will look like a mess on your terminal. 
+                In general, it is not ideal (feasible) to print a tree with more than 4 levels. Note that all the trees in the list files (list0.txt to list6.txt) print nicely. <br>
+
+            </p>
+        </div>
+        <div class="project_code">
+            <a href="https://github.com/GerritEMulder/Pretty_Print_Java_Trees">Project Code</a>
+        </div>
+    </body>
+</html>

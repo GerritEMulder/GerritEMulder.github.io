@@ -1,5 +1,8 @@
 /* Master Styles  File */
 /* Author: Gerrit Mulder */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
 body {
     margin: 0px;
 }
@@ -13,7 +16,10 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
 }
 
 .navbar_leftside {
@@ -23,7 +29,7 @@ body {
 .navbar > .navbar_leftside > div{
     margin-right: 20px;
     font-size: 0.9em;
-    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 .navbar_link {
@@ -47,17 +53,24 @@ body {
     transition: color 0.5s;
 }
 
-/* Maybe remove this? */
-.navbar > .navbar_rightside > div{
-    /*text-transform: uppercase;*/
-    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+.active_link {
+    border-bottom: black 1px solid;
 }
 
-/* The header and photo of Gerrit */
+.active_link a {
+    color: black !important;
+}
+
+
+/* Maybe remove this? */
+.navbar > .navbar_rightside > div{
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+/* The header. */
 .header {
-    /* display: flex; */
-    padding: 20px;
-    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+    padding-bottom: 20px;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 5em;
 }
@@ -106,18 +119,34 @@ body {
     margin-bottom: 20px;
 }
 
+.image_text:hover .logo {
+    transition: 1s;
+    filter: opacity(0%);
+}
+
+
 .image_text .subtitle {
     transition: 1s;
     color: transparent;
     font-weight: 600;
-    font-family: 'Perpetua', 'Times New Roman', Times, serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .image_text:hover .subtitle {
     transition: 1s;
     font-weight: 600;
     color: lightseagreen;
-    font-family: 'Perpetua', 'Times New Roman', Times, serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.image_text .subtitle a {
+    transition: 1s;
+    color: transparent;
+}
+
+.image_text:hover a {
+    transition: 1s;
+    color: purple;
 }
 
 /* The styles for showing the date each item in the portfolio was completed. */
@@ -125,6 +154,7 @@ body {
     transition: 1s;
     border: solid black;
     border-radius: 1em;
+    padding: 2px 4px;
     box-shadow: 0 0 3pt 2pt white;
     background-color: white;
 }
@@ -134,22 +164,120 @@ body {
     background-color: transparent;
     border: transparent;
     box-shadow: 0 0 3pt 2pt transparent;
+    border-radius: 0em;
 }
 
 .image_text .date_completed {
     font-weight: 600;
-    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
 }
 
 .image_text:hover .date_completed {
     transition: 1s;
     color: transparent;
     font-weight: 600;
-    font-family: 'Copperplate Gothic Light','Times New Roman', Times, serif;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
 }
 
 /* The style for fading the images. */
 .image_fade {
     transition: 1s;
     filter: brightness(10%);
+}
+
+/* These are the styles for the project pages. */
+.description P{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* text-align: center; */
+}
+
+.description img {
+    height: 600px;
+    width: 1200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* This is the style for the project code button. */
+.project_code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    padding-bottom: 30px;
+    font-size: 1.75em;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* I need to fix the button code. */
+.project_code a {
+    /* text-decoration: none;
+    color: #8a8a8a;
+    border: solid rgba(0, 0, 0, 0.904);
+    border-radius: 1em;
+    padding: 2px 4px; 
+    transition: 1s;
+    box-shadow: 0 5px 0 black; */
+    background-color: red;
+    border: solid black;
+    border-radius: 1em;
+    box-shadow: 0 5px 0 darkred;
+    color: white;
+    padding: 1em 1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Fix this too. */
+.project_code:hover a {
+    /* transition: 1s;
+    color: black;
+    border: solid blue;
+    box-shadow: 0 5px 0 blue;
+    border-radius: 1em; */
+    background-color: #ce0606;
+}
+
+.project_code:active a {
+    box-shadow: none;
+    top: 5px;
+}
+
+/* The Styles for the contact me page. */
+.contact_me {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.contact_me input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+.contact_me  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact_me input[type=submit]:hover {
+    background-color: #45a049;
 }

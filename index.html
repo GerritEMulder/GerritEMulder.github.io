@@ -4,15 +4,11 @@
 <!DOCTYPE html>
 <html>
     <!-- TODO: 
-        - Add projects.
-            - Link to code/details?
-        - Add fun animations.
-        - Add images.
+        - Fix buttons on project pages lighting up when they should not.
         - Link resume.
-        - Add bio?
-        - Should I have one page or multiple?
+        - Add references to images and logos.
+        - Add contact me page.
         - 
-    
     -->
 
     <head>
@@ -27,11 +23,11 @@
         <div class="container">
             <div class="navbar">
                 <div class="navbar_leftside">
-                    <div class="navbar_link">
+                    <div class="navbar_link active_link">
                         <a href="index.html">Home</a>
                     </div>
                     <div class="navbar_link">
-                        <a href="about.html">About Me</a>
+                        <a href="contact.html">Contact Me</a>
                     </div>
                 </div>
                 <div class="navbar_rightside">
@@ -44,6 +40,7 @@
 
         <div class="header">Gerrit Mulder</div>
         <img class="portrait" src="images/GerritMulderPortrait.jpg" alt="Gerrit Mulder">
+        <br> <!-- Maybe remove this line. -->
 
         <!-- This is where the main bulk of the content for my portfolio is. -->
         <div class="main_content">
@@ -58,7 +55,8 @@
                             <img src="images/logos/temp.png">
                         </div>
                         <div class="subtitle">
-                            This is where a short explanation would be.
+                            This is where a short explanation would be.<br>
+                            <a href="compsci4490.html">More details...</a>
                         </div>
                         <div class="date_completed">
                             <p>April 2020</p>
@@ -68,14 +66,16 @@
 
                 <!-- This is a single item in my portfolio. -->
                 <div class="portfolio_item">
-                    <div class="portfolio_item_image" style="background-image:url(images/compsci4490.jpg)"></div>
-
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci4490.png)"></div>
+                    
                     <div class="image_text">
                         <div class="logo">
-                            <img src="images/logos/temp.png">
+                            <img src="images/logos/Dragonfly.png">
                         </div>
                         <div class="subtitle">
-                            This is where a short explanation would be.
+                            This was the undergraduate thesis study I completed my last year of university.
+                            The study was a feasibility study examining the automated segmentation of scanned 3D images for extraction of non-planar pages.<br>
+                            <a href="compsci4490.html">More details...</a>
                         </div>
                         <div class="date_completed">
                             <p>April 2020</p>
@@ -84,14 +84,16 @@
                 </div>
 
                 <div class="portfolio_item">
-                    <div class="portfolio_item_image" style="background-image:url(images/compsci4483.jpg)"></div>
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci4483.png)"></div>
 
                     <div class="image_text">
                         <div class="logo">
-                            <img src="images/logos/temp.png">
+                            <img src="images/logos/C_Sharp.svg">
                         </div>
                         <div class="subtitle">
-                            This is where a short explanation would be.
+                            This was a game development group project that I was apart off.
+                            The game is called "The Paper Curse" and it was developed using Unity and C#.<br>
+                            <a href="compsci4483.html">More details...</a>
                         </div>
                         <div class="date_completed">
                             <p>April 2020</p>
@@ -100,14 +102,16 @@
                 </div>
 
                 <div class="portfolio_item">
-                    <div class="portfolio_item_image" style="background-image:url(images/compsci4481.jpg)"></div>
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci4481.png)"></div>
 
                     <div class="image_text">
                         <div class="logo">
-                            <img src="images/logos/temp.png">
+                            <img src="images/logos/compression.png">
                         </div>
                         <div class="subtitle">
-                            This is where a short explanation would be.
+                            An image compression and decompression programs built using C.
+                            The programs use DPCM encoding and decoding to achieve the compression and decompression.<br>
+                            <a href="compsci4481.html">More details...</a>
                         </div>
                         <div class="date_completed">
                             <p>March 2020</p>
@@ -116,14 +120,15 @@
                 </div>
 
                 <div class="portfolio_item">
-                    <div class="portfolio_item_image" style="background-image:url(images/compsci3319.jpg)"></div>
+                    <div class="portfolio_item_image" style="background-image:url(images/compsci3319.png)"></div>
 
                     <div class="image_text">
                         <div class="logo">
-                            <img src="images/logos/temp.png">
+                            <img src="images/logos/mysql.png">
                         </div>
                         <div class="subtitle">
-                            This is where a short explanation would be.
+                            This is a health network website I built using PHP, CSS, Javascript, HTML, and MySQL.<br>
+                            <a href="compsci3319.html">More details...</a>
                         </div>
                         <div class="date_completed">
                             <p>December 2019</p>
@@ -136,10 +141,11 @@
 
                     <div class="image_text">
                         <div class="logo">
-                            <img src="images/logos/temp.png">
+                            <img src="images/logos/server.png">
                         </div>
                         <div class="subtitle">
-                            This is where a short explanation would be.
+                            A TCP and UDP networked date/time server and respective clients built using Python.<br>
+                            <a href="compsci3357.html">More details...</a>
                         </div>
                         <div class="date_completed">
                             <p>October 2019</p>
@@ -155,7 +161,9 @@
                             <img src="images/logos/maze.png">
                         </div>
                         <div class="subtitle">
-                            This is where a short explanation would be.
+                            This is a Java program that solves a labyrinth using graphs and graph algorithms.
+                            Once finished the program will show you the path through the labyrinth.<br>
+                            <a href="compsci2210.html">More details...</a>
                         </div>
                         <div class="date_completed">
                             <p>December 2017</p>
@@ -163,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio_item">
+                <div class="portfolio_item">=
                     <div class="portfolio_item_image" style="background-image:url(images/compsci1027.jpg)"></div>
 
                     <div class="image_text">
@@ -171,7 +179,8 @@
                             <img src="images/logos/java.png">
                         </div>
                         <div class="subtitle">
-                            This is where a short explanation would be.
+                            This Java program prints a java tree in the terminal using recursion, binary trees and various binary tree algorithms.<br>
+                            <a href="compsci1027.html">More details...</a>
                         </div>
                         <div class="date_completed">
                             <p>Spring 2016</p>
@@ -181,13 +190,14 @@
 
                 <div class="portfolio_item">
                     <div class="portfolio_item_image" style="background-image:url(images/compsci1026.jpg)"></div>
-
+                    
                     <div class="image_text">
                         <div class="logo">
                             <img src="images/logos/python.png">
                         </div>
                         <div class="subtitle">
-                            This is where a short explanation would be.
+                            A python program for calculating if a widget can be built with the parts I have.<br>
+                            <a href="compsci1026.html">More details...</a>
                         </div>
                         <div class="date_completed">
                             <p>Fall 2015</p>

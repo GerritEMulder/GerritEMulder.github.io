@@ -1,0 +1,54 @@
+<!-- Author: Gerrit E. Mulder -->
+<!-- Computer Science 1026 project. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Widget Processing Project</title> 
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar_leftside">
+                    <div class="navbar_link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="navbar_link">
+                        <a href="contact.html">Contact Me</a>
+                    </div>
+                </div>
+                <div class="navbar_rightside">
+                    <div class="brand">
+                        <div>Gerrit Mulder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">Python Widget Processing Project</div>
+        
+        <div class="description">
+            <img src="images/compsci1026.jpg">
+            <p> This is a program I wrote in Python for one of my first computer science classes at Western university. <br><br>
+                <!-- Maybe remove this line ^ -->
+                In this program I calculate from a list of widgets if each widget can be built with the parts I have. 
+                First the parts file is read in and processed inputting the name, price and quantity of each part into three lists. 
+                Then it creates a master list (The database) of all the parts and two dictionaries for the price and quantity of each part.
+                It will next print out the stock of each part before widget processing and open the widgets file and starts processing the file.
+                When the program gets to a new widget it clears all variables for processing them and reads all the parts needed for that one widget.
+                Next it checks if the widget can be built with the parts currently in stock.
+                If widget can be built, the program reduces the related part stocks by the number that was used up.
+                It also calculates the cost of the widget and then prints out all the information it gathered thus far.
+                If the widget can't be built it prints out that it can't be built detailing why it can't be built.
+                After all widgets have been processed it prints out the stock of each part after widget processing.
+                The program ends by closing the parts and widgets files.
+            </p>
+        </div>
+        <div class="project_code">
+            <a href="https://github.com/GerritEMulder/Widget_Processing_Program">Project Code</a>
+        </div>
+    </body>
+</html>
