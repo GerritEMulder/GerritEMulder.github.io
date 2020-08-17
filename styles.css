@@ -281,3 +281,12 @@ body {
 .contact_me input[type=submit]:hover {
     background-color: #45a049;
 }
+
+/* Thank you page styles. */
+.T_header {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.TP {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
