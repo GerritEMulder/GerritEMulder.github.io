@@ -275,7 +275,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 .about_card {
-    background-color: aqua;
+    background-color: lightcyan;
+    border-style: solid;
+    margin: 10px;
 }
 .about_me {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -290,6 +292,11 @@ body {
 @media only screen and (max-width: 1000px) {
     .about_wrapper {
         display: block;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .portfolio_items {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     }
 }
 
