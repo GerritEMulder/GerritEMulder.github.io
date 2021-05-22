@@ -290,10 +290,17 @@ body {
     font-size: 1.5em;
     padding: 1.25rem;
 }
+.social_icons {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 
 @media only screen and (max-width: 1000px) {
     .about_wrapper {
         display: block;
+    }
+    .social_icons {
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media only screen and (max-width: 600px) {
