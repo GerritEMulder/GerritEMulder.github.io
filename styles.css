@@ -294,6 +294,10 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
+.social_icons img{
+    width: 50%;
+    height: auto;
+}
 
 @media only screen and (max-width: 1000px) {
     .about_wrapper {
