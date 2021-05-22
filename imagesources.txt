@@ -7,3 +7,5 @@ Comp Sci 4481 <div>Icons made by <a href="https://www.flaticon.com/authors/eucal
     https://web.stanford.edu/class/ee368b/Handouts/15-DPCM.pdf
 Comp Sci 4482 https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg
 Comp Sci 4490 https://commons.wikimedia.org/wiki/File:Dragonfly-logo-no-company.png
+LinkedIn <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Resume <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
