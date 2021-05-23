@@ -293,10 +293,18 @@ body {
 .social_icons {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    text-align: center;
 }
 .social_icons img{
     width: 25%;
     height: auto;
+}
+
+/*  */
+.referances {
+    background-color: aquamarine;
+    margin-top: 40px;
+    padding: 1.25rem;
 }
 
 @media only screen and (max-width: 1000px) {
