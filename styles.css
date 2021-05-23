@@ -295,7 +295,7 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 .social_icons img{
-    width: 50%;
+    width: 25%;
     height: auto;
 }
 
