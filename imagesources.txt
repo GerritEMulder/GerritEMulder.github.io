@@ -9,3 +9,5 @@ Comp Sci 4482 https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.s
 Comp Sci 4490 https://commons.wikimedia.org/wiki/File:Dragonfly-logo-no-company.png
 LinkedIn <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 Resume <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Full stack Photo by <a href="https://unsplash.com/@euwars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farzad Nazifi</a> on <a href="https://unsplash.com/s/photos/web-development?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
